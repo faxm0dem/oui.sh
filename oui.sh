@@ -1,3 +1,14 @@
+# unmute sound card
+play()
+{
+  amixer get Master | grep -qw off
+  ret=$?
+  [ $ret -eq 0 ] && amixer set Master toggle >/dev/null
+  "$@"
+  [ $ret -eq 0 ] && amixer set Master toggle >/dev/null
+}
+
+# wisdom
 ouich()
 {
 	arg1=$1
