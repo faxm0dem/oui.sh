@@ -33,6 +33,6 @@ ouich list
 Installation (debian, ubuntu) :
 
 ```
-sudo apt install mpv alsa-utils lftp
+sudo apt install mpv alsa-utils lftp bsdextrautils
 ```
 

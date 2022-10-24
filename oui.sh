@@ -16,7 +16,7 @@ ouich()
 	set -- $list
 	random=$1
 	if [ "$arg1" == "list" ]; then
-		echo $list | sort | column
+		echo $list | sed 's/ /\n/g' | sort | column
 	elif [ -z "$arg1" ]; then
 		if [ -n "$random" ]; then
 			echo $random
