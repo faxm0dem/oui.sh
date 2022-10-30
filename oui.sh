@@ -25,6 +25,6 @@ ouich()
 			play mpv --really-quiet https://ouich.es/random
 		fi
 	else
-		play mpv --really-quiet https://ouich.es/mp3/$1.mp3
+		play mpv --really-quiet https://ouich.es/mp3/$arg1.mp3
 	fi
 }
